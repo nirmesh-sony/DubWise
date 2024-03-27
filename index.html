@@ -14,7 +14,7 @@
         style="display: block; 
               margin-left: auto;
               margin-right: auto;
-              width: 95%;"
+              width: 55%;"
         src="./block_diagram2.png"
         alt="DubWise Architecture">
     <figcaption>Proposed Method: Tokenized reference-speaker audio and text form the model's prompt (ground truth audio included during training only). Lip region video is fed through cross-attention. HiFi-GAN generates speech from the output.</figcaption>
@@ -219,4 +219,204 @@
   </div>
 </div>
 
+<div class="mt-4 col-md-12" style="text-align: center;" >
+<h2 style="text-align: center;">Non-Paralle TTS Examples</h2>
+</div>
 
+
+<div class="mt-4 col-md-12" style="text-align: center;" >
+<font style="text-align: Left;"> Example 1: Input Text: So if you know few bond energies, you can calculate the entropy for lot of reactions.</font>
+</div>
+<div class="d-flex flex-row mb-3 justify-content-around mt-4 col-md-12" style="text-align: center;">
+  <div class="video-container">
+    <figure>
+      <video width="200" height="190"  controls controlsList="nodownload">
+        <source src="./Demo_Nonparallel/gt/1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption style="text-align: center;">Input English Reference Video</figcaption>
+    </figure>
+  </div>
+
+  <div class="video-container">
+    <figure>
+      <video width="200" height="190"  controls controlsList="nodownload">
+        <source src="./Demo_Nonparallel/proposedXTTS/1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption style="text-align: center;">Proposed DubWise</figcaption>
+    </figure>
+  </div>
+
+   <div class="video-container">
+    <figure>
+      <video width="200" height="190"  controls controlsList="nodownload">
+        <source src="./Demo_Nonparallel/XTTS_ffmpgdurcontrol/1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption style="text-align: center;">XTTS+WSOLA</figcaption>
+    </figure>
+  </div>
+  
+   <div class="video-container">
+    <figure>
+      <video width="200" height="190"  controls controlsList="nodownload">
+        <source src="./Demo_Nonparallel/yourtts_withdur/1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption style="text-align: center;">YourTTS</figcaption>
+    </figure>
+  </div>
+  
+  <div class="video-container">
+    <figure>
+      <video width="200" height="190"  controls controlsList="nodownload">
+        <source src="./Demo_Nonparallel/FS2/1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption style="text-align: center;">Fastspeech2</figcaption>
+    </figure>
+  </div>
+  
+  <div class="video-container">
+    <figure>
+      <video width="200" height="190" controls controlsList="nodownload">
+        <source src="./Demo_Nonparallel/HPMDub/1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption style="text-align: center;">HPMDub</figcaption>
+    </figure>
+  </div>
+</div>
+
+
+<div class="mt-4 col-md-12" style="text-align: center;" >
+<font style="text-align: Left;"> Example 2: Input Text: So you can just, instead of looking at 10 to the minus 10 you can say what's the.</font>
+</div>
+<div class="d-flex flex-row mb-3 justify-content-around mt-4 col-md-12" style="text-align: center;">
+  <div class="video-container">
+    <figure>
+      <video width="200" height="190"  controls controlsList="nodownload">
+        <source src="./Demo_Nonparallel/gt/2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption style="text-align: center;">Input English Reference Video</figcaption>
+    </figure>
+  </div>
+
+  <div class="video-container">
+    <figure>
+      <video width="200" height="190"  controls controlsList="nodownload">
+        <source src="./Demo_Nonparallel/proposedXTTS/2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption style="text-align: center;">Proposed DubWise</figcaption>
+    </figure>
+  </div>
+
+   <div class="video-container">
+    <figure>
+      <video width="200" height="190"  controls controlsList="nodownload">
+        <source src="./Demo_Nonparallel/XTTS_ffmpgdurcontrol/2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption style="text-align: center;">XTTS+WSOLA</figcaption>
+    </figure>
+  </div>
+  
+   <div class="video-container">
+    <figure>
+      <video width="200" height="190"  controls controlsList="nodownload">
+        <source src="./Demo_Nonparallel/yourtts_withdur/2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption style="text-align: center;">YourTTS</figcaption>
+    </figure>
+  </div>
+  
+  <div class="video-container">
+    <figure>
+      <video width="200" height="190"  controls controlsList="nodownload">
+        <source src="./Demo_Nonparallel/FS2/2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption style="text-align: center;">Fastspeech2</figcaption>
+    </figure>
+  </div>
+  
+  <div class="video-container">
+    <figure>
+      <video width="200" height="190"  controls controlsList="nodownload">
+        <source src="./Demo_Nonparallel/HPMDub/2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption style="text-align: center;">HPMDub</figcaption>
+    </figure>
+  </div>
+</div>
+
+
+<div class="mt-4 col-md-12" style="text-align: center;" >
+<font style="text-align: Left;"> Example 3: Input Text: So I can measure current flow in Ams in an electronic cell that forces galvanic cell. </font>
+</div>
+<div class="d-flex flex-row mb-3 justify-content-around mt-4 col-md-12" style="text-align: center;">
+  <div class="video-container">
+    <figure>
+      <video width="200" height="190"  controls controlsList="nodownload">
+        <source src="./Demo_Nonparallel/gt/3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption style="text-align: center;">Input English Reference Video</figcaption>
+    </figure>
+  </div>
+
+  <div class="video-container">
+    <figure>
+      <video width="200" height="190"  controls controlsList="nodownload">
+        <source src="./Demo_Nonparallel/proposedXTTS/3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption style="text-align: center;">Proposed DubWise</figcaption>
+    </figure>
+  </div>
+
+   <div class="video-container">
+    <figure>
+      <video width="200" height="190"  controls controlsList="nodownload">
+        <source src="./Demo_Nonparallel/XTTS_ffmpgdurcontrol/3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption style="text-align: center;">XTTS+WSOLA</figcaption>
+    </figure>
+  </div>
+  
+   <div class="video-container">
+    <figure>
+      <video width="200" height="190"  controls controlsList="nodownload">
+        <source src="./Demo_Nonparallel/yourtts_withdur/3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption style="text-align: center;">YourTTS</figcaption>
+    </figure>
+  </div>
+  
+  <div class="video-container">
+    <figure>
+      <video width="200" height="190"  controls controlsList="nodownload">
+        <source src="./Demo_Nonparallel/FS2/3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption style="text-align: center;">Fastspeech2</figcaption>
+    </figure>
+  </div>
+  
+  <div class="video-container">
+    <figure>
+      <video width="200" height="190"  controls controlsList="nodownload">
+        <source src="./Demo_Nonparallel/HPMDub/3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption style="text-align: center;">HPMDub</figcaption>
+    </figure>
+  </div>
+</div>
