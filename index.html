@@ -2,7 +2,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 <div class="text-bg-info p-3 mt-4 col-md-12" style="height: 200;">
-  <h1 style="text-align: center;">DubWise: Video-Guided Speech Duration Control in Multimodal LLM-based Text-to-Speech for Dubbing</h1>
+  <h1 style="text-align: center;">Isometric Neural Machine Translation using Phoneme Count Ratio Reward-based Reinforcement Learning</h1>
 </div>
 
 <div class="mt-4 col-md-12" style="text-align: center;" >
@@ -14,7 +14,7 @@
         style="display: block; 
               margin-left: auto;
               margin-right: auto;
-              width: 95%;"
+              width: 55%;"
         src="./block_diagram2.png"
         alt="DubWise Architecture">
     <figcaption>Proposed Method: Tokenized reference-speaker audio and text form the model's prompt (ground truth audio included during training only). Lip region video is fed through cross-attention. HiFi-GAN generates speech from the output.</figcaption>
@@ -22,29 +22,99 @@
 </div>
 
 <div class="mt-4 col-md-12" style="text-align: center;" >
-<h2 style="text-align: center;">Example output of Visual Guided Duration Controllable TTS Piepline</h2>
+<h2 style="text-align: center;">Cross-Lingual TTS Examples</h2>
+</div>
+<meta charset="UTF-8" />
+<div class="mt-4 col-md-12" style="text-align: center;" >
+<font style="text-align: Left;"> Example 1: Input Text: यह अभिक्रिया निर्देशांक अभिक्रिया  प्रगति हैं, जो कुछ सेकंड या एक शून्य वर्षो मैं जा सक्ति हैं। </font>
 </div>
 <div class="d-flex flex-row mb-3 justify-content-around mt-4 col-md-12" style="text-align: center;">
   <div class="video-container">
     <figure>
-      <video width="410" height="231" controls controlsList="nodownload">
-        <source src="./Input1.mp4" type="video/mp4">
+      <video width="300" height="231" controls controlsList="nodownload">
+        <source src="./Demo_CrossLingual/gt_videos/1.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
-      <figcaption style="text-align: center;">Input English</figcaption>
+      <figcaption style="text-align: center;">Input English Reference Video</figcaption>
     </figure>
   </div>
 
   <div class="video-container">
     <figure>
-      <video width="410" height="231" controls controlsList="nodownload">
-        <source src="./Output1.mp4" type="video/mp4">
+      <video width="300" height="231" controls controlsList="nodownload">
+        <source src="./Demo_CrossLingual/proposedXTTS/1.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
-      <figcaption style="text-align: center;">With DubWise</figcaption>
+      <figcaption style="text-align: center;">Proposed DubWise</figcaption>
     </figure>
   </div>
 
+   <div class="video-container">
+    <figure>
+      <video width="300" height="231" controls controlsList="nodownload">
+        <source src="./Demo_CrossLingual/XTTS_ffmpgdurcontrol/1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption style="text-align: center;">XTTS+WSOLA</figcaption>
+    </figure>
+  </div>
+  
+   <div class="video-container">
+    <figure>
+      <video width="300" height="231" controls controlsList="nodownload">
+        <source src="./Demo_CrossLingual/yourtts_withdur/1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption style="text-align: center;">YourTTS</figcaption>
+    </figure>
+  </div>
 </div>
 
 
+
+
+<div class="mt-4 col-md-12" style="text-align: center;" >
+<font style="text-align: Left;"> Example 2: Input Text: समय के एक कार्य के रूप में एकाग्रता अधिक तेजी से बढ़ रही है, और पहले के समय में संतुलन प्राप्त कर रही है।
+ </font>
+</div>
+<div class="d-flex flex-row mb-3 justify-content-around mt-4 col-md-12" style="text-align: center;">
+  <div class="video-container">
+    <figure>
+      <video width="300" height="231" controls controlsList="nodownload">
+        <source src="./Demo_CrossLingual/gt_videos/2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption style="text-align: center;">Input English Reference Video</figcaption>
+    </figure>
+  </div>
+
+  <div class="video-container">
+    <figure>
+      <video width="300" height="231" controls controlsList="nodownload">
+        <source src="./Demo_CrossLingual/proposedXTTS/2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption style="text-align: center;">Proposed DubWise</figcaption>
+    </figure>
+  </div>
+
+   <div class="video-container">
+    <figure>
+      <video width="300" height="231" controls controlsList="nodownload">
+        <source src="./Demo_CrossLingual/XTTS_ffmpgdurcontrol/2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption style="text-align: center;">XTTS+WSOLA</figcaption>
+    </figure>
+  </div>
+  
+   <div class="video-container">
+    <figure>
+      <video width="300" height="231" controls controlsList="nodownload">
+        <source src="./Demo_CrossLingual/yourtts_withdur/2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption style="text-align: center;">YourTTS</figcaption>
+    </figure>
+  </div>
+</div>
